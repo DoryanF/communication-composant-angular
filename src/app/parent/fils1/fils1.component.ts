@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Voiture } from 'src/app/shared/voiture.model';
+import { Pilote } from 'src/app/shared/pilote.model';
 
 @Component({
   selector: 'app-fils1',
@@ -9,4 +10,5 @@ import { Voiture } from 'src/app/shared/voiture.model';
 export class Fils1Component {
   @Input() message: string = '';
   @Input('attr-voiture') voiture: Voiture = new Voiture('','');
+
 }

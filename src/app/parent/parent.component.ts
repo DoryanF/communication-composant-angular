@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Voiture } from '../shared/voiture.model';
+import { Pilote } from '../shared/pilote.model';
 
 @Component({
   selector: 'app-parent',
@@ -9,4 +10,11 @@ import { Voiture } from '../shared/voiture.model';
 export class ParentComponent {
   messageDuParent:string = "Bienvenue à la formation angular";
   voiture:Voiture = new Voiture("404","Peugeot");
+
+
+  AjoutVoiture(voiture:Voiture)
+  {
+    console.log(voiture);
+    this.voiture = voiture;
+  }
 }
